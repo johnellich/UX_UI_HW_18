@@ -7,7 +7,7 @@ body {
     display: grid;
     min-height: 500px;
     max-height: 500px;
-    grid-template-rows: 25% 75%;
+    grid-template-rows: 25% 50% 25%;
     grid-template-columns: 25% 25% 50%;
     grid-template-areas:
     "featuredProduct secondaryProduct secondaryProduct"
@@ -30,26 +30,15 @@ body {
   
   .heroGrid {
     display: grid;
-    grid-template-columns: 1fr 1f;
-    grid-gap: 30px
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
   }
 
   .headline {
-    background-color: rgba(48,48,48,0.7);
+    background-color: rgba(48, 48, 48, 0.7);
     border-bottom: 5px solid #00c3ff;
     width: 100%;
     padding: 0px 5%;
-  }
-
-  headline {
-    background-color: rgba(0,0,0,0.7);
-    border-bottom: 5px solid #00c3ff;
-    position: absolute;
-    right: 500px;
-    top: 150px;
-    padding: 25px;
-    max-width: 550px;
-    z-index: 100;
   }
 
   .heroGridArea {
@@ -120,7 +109,7 @@ body {
   h2 {
     font-size: 60px;
     margin: 0px 0px;
-    color: #00c3ff
+    color: #00c3ff;
   }
 
   #headline p {
@@ -129,6 +118,17 @@ body {
     font-weight: 300;
     margin: 0px 0px;
     color: whitesmoke;
+  }
+
+  .navLinks a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .navLinks a:hover {
+    background-color: #00c3ff;
+    color: white;
+    margin: 5%;
   }
 
   @media screen and (max-width: 600px) {
